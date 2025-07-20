@@ -11,29 +11,58 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
-    <main>
-      <img
-        src="/images/image-equilibrium.jpg"
-        alt="image-equilibrium"
-        class="image-equilibrium"
-      />
-      <section>
-        <h1>Equilibrium #3429</h1>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div>
-          <p>0.041 ETH</p>
-          <p>3 days left</p>
+    <main class="card">
+      <div class="image-container">
+        <img
+          src="/images/image-equilibrium.jpg"
+          alt="Cube"
+          class="cube-image"
+        />
+        <div class="overlay">
+          <svg
+            class="eye-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="white"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 5C7 5 2.73 8.11 1 12c1.73 3.89 6 7 11 7s9.27-3.11 11-7c-1.73-3.89-6-7-11-7zm0 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <section class="card-content">
+        <h1 class="card-title">Equilibrium #3429</h1>
+        <p class="card-description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card-details">
+          <div class="eth_div">
+            <img src="/images/icon-ethereum.svg" alt="" />
+            <p>0.041 ETH</p>
+          </div>
+          <div class="days_left">
+            <img src="/images/icon-clock.svg" alt="" />
+            <p>3 days left</p>
+          </div>
         </div>
         <hr />
-        <div>
+        <div class="creator">
           <img src="/images/image-avatar.png" alt="image-avatar" />
-          <h2>Creation of <span> Jules Wyvern</span></h2>
+          <h2>Creation of</h2>
+          <span> Jules Wyvern</span>
         </div>
       </section>
     </main>
